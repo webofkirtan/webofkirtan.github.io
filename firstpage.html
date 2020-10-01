@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My First Page</title>
+
+	<style type="text/css">
+		h1{
+			color: blue;
+			font-size: 50px;
+		}
+		p{
+			color: green;
+		}
+
+		p1{
+			/*background-color: skyblue;*/
+			color: black;
+		}
+		p2{
+			color: red;
+		}
+
+
+	</style>
+
+
+
+
+</head>
+<body style="background-color: #EEDD82">
+	<h1 align="center"> Hello World</h1>
+	<p1>How are you Brother!!<br><br></p1>
+	<p2 id="introduction"> I am Kirtan Shah Full-Stack Developer<br> </p2>
+	<p id="MainLine">Welcome here!!</p>
+	<script type="text/javascript">
+		document.write("Hello World Kirtan Bhai");
+	</script><br>
+	<button type="button" onclick="myfunction()">Try it</button>
+
+	<script type="text/javascript">
+		var txt;
+		
+		function myfunction(){
+			var people = prompt("Please enter your name here; ","Here");
+			if (people ==null || people == "") {
+				txt = "User canceled prompt";
+				// <button type="button" onclick="document.getElementById(MainLine).innerHTML"/>
+				
+			}else{
+					txt = "Hello "+people + "! Welcome How are you today?";
+			}
+			//window.alert("Heyy Kirtan You have clicked try it aren't you!!");
+			 document.getElementById("MainLine").innerHTML = txt;
+			 alert("Hello "+txt);
+			
+		}
+
+	</script>
+</body>
+</html>
